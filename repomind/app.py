@@ -252,10 +252,10 @@ def run_analysis(repo_url: str, no_clone: bool, api_key: str):
 # ── UI ────────────────────────────────────────────────────────────────────────
 
 CSS = """
-#logo { font-size: 1.6rem; font-weight: 700; color: #89b4fa; }
+#logo { font-size: 1.6rem; font-weight: 700; color: #2563eb; }
 .tab-nav button { font-size: 0.9rem; }
-#run-btn { background: linear-gradient(135deg, #89b4fa, #cba6f7) !important; color: #1e1e2e !important; font-weight: 700; }
-#log-box { font-family: monospace; font-size: 0.82rem; background: #1e1e2e !important; color: #a6e3a1; border-radius: 8px; }
+#run-btn { background: linear-gradient(135deg, #2563eb, #7c3aed) !important; color: #ffffff !important; font-weight: 700; }
+#log-box { font-family: monospace; font-size: 0.82rem; background: #f1f5f9 !important; color: #1e293b !important; border-radius: 8px; padding: 0.8rem; border: 1px solid #e2e8f0; }
 """
 
 with gr.Blocks(title="RepoMind") as demo:
