@@ -1,3 +1,4 @@
+gradio>=4.44.0
 gitpython>=3.1.40
 radon>=6.0.1
 bandit>=1.7.7

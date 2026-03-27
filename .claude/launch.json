@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "repomind-ui",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "repomind.app"],
+      "port": 7860
+    },
+    {
+      "name": "repomind-analyze",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "repomind.main", "https://github.com/rosalinatorres888/repomind", "--output", "analysis_report.md"],
+      "port": null
+    },
+    {
+      "name": "pytest",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "pytest", "tests/", "-v"],
+      "port": null
+    }
+  ]
+}
