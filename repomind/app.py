@@ -39,7 +39,7 @@ def _mermaid_html(diagram: str) -> str:
 def run_analysis(repo_url: str, no_clone: bool, api_key: str):
     """Generator — yields (log, overview_md, arch_md, arch_html, dep_md, cc_md, sec_md, ai_md, dl_path)"""
 
-    if api_key.strip():
+    if api_key and api_key.strip():
         os.environ["ANTHROPIC_API_KEY"] = api_key.strip()
 
     blank = ("", "", "", "", "", "", "", "", None)
